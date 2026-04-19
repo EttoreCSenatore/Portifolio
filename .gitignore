@@ -33,12 +33,3 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Images
-assets/images/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.webp
-*.svg
