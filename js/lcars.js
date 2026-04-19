@@ -48,3 +48,15 @@ for (i = 0; i < acc.length; i++) {
       LCARSkeystroke.play();
     });
   });
+
+// Background Music Handler
+document.addEventListener('DOMContentLoaded', () => {
+  let bgMusic = document.getElementById('bg-music');
+  if (bgMusic) {
+    bgMusic.volume = 0.2;
+    // Attempt to play on first user interaction if blocked by browser autoplay policies
+    document.body.addEventListener('click', () => {
+      if (bgMusic.paused) bgMusic.play();
+    }, { once: true });
+  }
+});
