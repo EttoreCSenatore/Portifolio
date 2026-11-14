@@ -118,10 +118,11 @@
           <p>A rate-limited catalog scraper, REST API and conversational product search for a Brazilian sports store (Tivolli Sports), with near-real-time freshness, a React chat front end and Splunk HEC event forwarding. <em>Garimpar</em> is Portuguese for hunting down a good find.</p>
           <ul class="bullets">
             <li>Sitemap discovery, paginated crawl, scheduled full and incremental refresh</li>
+            <li>Full-text search with SQLite FTS5 and BM25 ranking: accent-insensitive, any word order</li>
             <li>Cursor-paginated FastAPI endpoints, SQLite (WAL), mocked-HTTP test suite</li>
             <li>Security-reviewed: SSRF-safe image proxy, rate limits, CodeQL and CI on every PR</li>
           </ul>
-          <ul class="chips"><li>Python</li><li>FastAPI</li><li>SQLModel</li><li>APScheduler</li><li>React</li></ul>
+          <ul class="chips"><li>Python</li><li>FastAPI</li><li>SQLite FTS5</li><li>APScheduler</li><li>React</li></ul>
           <div class="links">
             <a href="https://github.com/EttoreCSenatore/garimpo" rel="noopener">Source</a>
             <a href="https://ettorecsenatore.github.io/garimpo/" rel="noopener">Documentation</a>
