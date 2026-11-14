@@ -109,6 +109,11 @@ h1 em { font-style: normal; color: var(--accent); }
 .timeline h3 { font-size: 1.15rem; }
 .org { color: var(--muted); margin: 2px 0 12px; font-size: .95rem; }
 
+.subhead { font-size: 1.15rem; margin: 48px 0 16px; }
+.certs { display: grid; gap: 12px; }
+.certs li { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; display: flex; flex-direction: column; gap: 2px; }
+.certs span { color: var(--muted); font-size: .9rem; }
+
 .contact .lead { margin-top: 0; }
 .foot { padding-block: 32px 48px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
 
