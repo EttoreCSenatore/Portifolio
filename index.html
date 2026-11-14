@@ -97,12 +97,13 @@
             <h3>SlicePizza</h3>
             <span class="tag">DevOps lab</span>
           </div>
-          <p>A hands-on DevOps learning project: an online ordering system for a fictional pizzeria that grows in phases, each one forcing a new technology to be learned by feeling the problem first.</p>
+          <p>A hands-on DevOps learning project, built with a small team: an online ordering system for a fictional pizzeria that grows in phases, each one forcing a new technology to be learned by feeling the problem first.</p>
           <ul class="bullets">
-            <li>Orders API (FastAPI + PostgreSQL), menu site, kitchen dashboard</li>
-            <li>Roadmap through Caddy, RabbitMQ, CI/CD, Prometheus/Grafana, Terraform and k3s</li>
+            <li>Shipped: FastAPI orders API on PostgreSQL, menu site and Caddy on one domain, kitchen board behind a login</li>
+            <li>Order events through RabbitMQ (outbox) to a Telegram notification worker; container images built in CI</li>
+            <li>Next phases: observability, Terraform and Kubernetes (k3s)</li>
           </ul>
-          <ul class="chips"><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li><li>RabbitMQ</li><li>Terraform</li></ul>
+          <ul class="chips"><li>FastAPI</li><li>PostgreSQL</li><li>Docker</li><li>Caddy</li><li>RabbitMQ</li><li>GitHub Actions</li></ul>
           <div class="links">
             <a href="https://github.com/SenatoreTeam/SlicePizza" rel="noopener">Source</a>
             <a href="https://slicepizza-docs.senatore.tech/" rel="noopener">Documentation</a>
@@ -117,7 +118,7 @@
           <p>A rate-limited scraper and REST API for a Brazilian e-commerce catalogue, with near-real-time freshness, a React chat front end and Splunk HEC event forwarding.</p>
           <ul class="bullets">
             <li>Sitemap discovery, paginated crawl, scheduled full and incremental refresh</li>
-            <li>Cursor-paginated FastAPI endpoints, SQLite (WAL), 90 mocked-HTTP tests</li>
+            <li>Cursor-paginated FastAPI endpoints, SQLite (WAL), mocked-HTTP test suite</li>
             <li>Security-reviewed: SSRF-safe image proxy, rate limits, CodeQL and CI on every PR</li>
           </ul>
           <ul class="chips"><li>Python</li><li>FastAPI</li><li>SQLModel</li><li>APScheduler</li><li>React</li></ul>
