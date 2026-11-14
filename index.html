@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Ettore Senatore · Cloud &amp; DevOps Engineer</title>
   <meta name="description" content="Portfolio of Ettore Ciambra Senatore, Cloud/DevOps engineer and cybersecurity analyst focused on AWS, Infrastructure as Code and AI in DevSecOps and AIOps.">
   <meta name="theme-color" content="#0e1116">
@@ -12,9 +14,7 @@
   <meta property="og:image" content="assets/images/photo.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
+  <script src="js/theme.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
