@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ettore Senatore · Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Ettore Ciambra Senatore, full stack developer in Waterloo, Ontario. Wildfire early-warning, web scraping APIs, Linux tooling and DevOps projects.">
+  <title>Ettore Senatore · Cloud &amp; DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Ettore Ciambra Senatore, Cloud/DevOps engineer and cybersecurity analyst focused on AWS, Infrastructure as Code and AI in DevSecOps and AIOps.">
   <meta name="theme-color" content="#0e1116">
-  <meta property="og:title" content="Ettore Senatore · Full Stack Developer">
-  <meta property="og:description" content="Full stack developer building APIs, dashboards and DevOps-ready systems.">
+  <meta property="og:title" content="Ettore Senatore · Cloud &amp; DevOps Engineer">
+  <meta property="og:description" content="Cloud/DevOps engineer building secure, automated AWS environments and integrating AI into DevSecOps.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/photoPortifolio.png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -39,9 +39,9 @@
   <main id="main">
     <section class="hero wrap" id="top">
       <div class="hero-text">
-        <p class="eyebrow">Full Stack Developer · Waterloo, ON</p>
-        <h1>I build APIs, dashboards and systems that are <em>ready to run</em>.</h1>
-        <p class="lead">I'm Ettore Ciambra Senatore. I work across Python, JavaScript/TypeScript, Java, C# and Rust, and I care about the unglamorous parts too: tests, containers, CI and documentation.</p>
+        <p class="eyebrow">Cloud/DevOps Engineer · Cybersecurity Analyst · São Paulo, Brazil</p>
+        <h1>Secure, automated cloud, with <em>AI in the pipeline</em>.</h1>
+        <p class="lead">I'm Ettore Ciambra Senatore. I focus on AWS, Infrastructure as Code and DevSecOps, and on using AI to cut manual toil and incident response time. I also build full stack tools in Python, TypeScript, Java and Rust.</p>
         <div class="cta">
           <a class="btn primary" href="#projects">See my projects</a>
           <a class="btn" href="https://github.com/EttoreCSenatore" rel="noopener">GitHub</a>
@@ -55,14 +55,17 @@
       <h2 class="section-title"><span>01</span> About</h2>
       <div class="about-grid">
         <div class="prose">
-          <p>I graduated from Conestoga College's Computer Programming diploma (2025) and have since been building full stack projects end to end: data ingestion, REST APIs, React front ends and the infrastructure to deploy them.</p>
-          <p>Before that I worked at VARLab, a virtual reality innovation centre, coordinating external developers and clients on VR/AR learning simulations. That job taught me to turn vague requirements into clear technical tasks and to keep QA close to development.</p>
-          <p>Day to day I use AI tools as a collaborator to prototype faster, then review, test and own every line that ships.</p>
+          <p>I'm a Cloud/DevOps engineer with a focus on DevSecOps and AIOps. I'm passionate about bringing AI into the software delivery lifecycle to build scalable, secure AWS environments where automation and machine learning remove manual toil and speed up deployments.</p>
+          <p>My background in SOC threat analysis and QA lets me bridge security operations and cloud infrastructure. I "shift left" by building security checks and AI-driven observability directly into the CI/CD pipeline, so vulnerabilities and system anomalies are caught before they reach the business.</p>
+          <p>I completed a Computer Programming diploma at Conestoga College (Waterloo, Canada) and now work from São Paulo, Brazil. Outside of work I build open-source projects, such as a wildfire early-warning system for Brazil.</p>
         </div>
         <div class="skills" aria-label="Skills">
-          <div><h3>Languages</h3><ul class="chips"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>C#</li><li>Rust</li><li>C</li><li>SQL</li></ul></div>
-          <div><h3>Frameworks</h3><ul class="chips"><li>FastAPI</li><li>React</li><li>Vite</li><li>Leaflet</li><li>SQLModel</li><li>Docusaurus</li></ul></div>
-          <div><h3>Tools &amp; Ops</h3><ul class="chips"><li>Docker</li><li>GitHub Actions</li><li>Linux</li><li>MQTT</li><li>PostgreSQL</li><li>SQLite</li><li>Git</li></ul></div>
+          <div><h3>Cloud &amp; IaC</h3><ul class="chips"><li>AWS (EC2, S3, IAM, VPC, CloudTrail)</li><li>Terraform</li><li>CloudFormation</li><li>Bash</li></ul></div>
+          <div><h3>Containers</h3><ul class="chips"><li>Docker</li><li>Kubernetes (EKS)</li><li>Helm</li></ul></div>
+          <div><h3>CI/CD &amp; DevSecOps</h3><ul class="chips"><li>GitHub Actions</li><li>GitLab CI</li><li>Jenkins</li><li>ArgoCD</li><li>Trivy</li><li>SonarQube</li><li>Snyk</li></ul></div>
+          <div><h3>Observability &amp; AIOps</h3><ul class="chips"><li>Prometheus</li><li>Grafana</li><li>ELK Stack</li><li>Datadog</li><li>Python log anomaly detection</li></ul></div>
+          <div><h3>AI &amp; automation</h3><ul class="chips"><li>OpenAI API</li><li>AWS Bedrock</li><li>LangChain</li><li>Prompt engineering</li></ul></div>
+          <div><h3>Development</h3><ul class="chips"><li>Python</li><li>TypeScript</li><li>Java</li><li>C#</li><li>Rust</li><li>SQL</li><li>FastAPI</li><li>React</li></ul></div>
         </div>
       </div>
     </section>
@@ -104,6 +107,19 @@
 
         <article class="card">
           <div class="card-head">
+            <h3>NewGenLearning</h3>
+            <span class="tag">ConHacks 2026</span>
+          </div>
+          <p>A hackathon proof of concept, built with Samuel Estrada, for assessments in the age of AI. Instead of asking students to produce answers, the quiz mirrors the real job: choose a solution from candidates and defend the reasoning. Mocked up as if it lived inside an LMS such as D2L Brightspace.</p>
+          <ul class="bullets">
+            <li>Instructors supply a scenario, the correct solution and a rubric</li>
+            <li>AI drafts plausible wrong options and rubric-based feedback; instructors review and approve</li>
+          </ul>
+          <ul class="chips"><li>AI-assisted tooling</li><li>EdTech</li><li>Prototyping</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
             <h3>Tivolli Scraper &amp; API</h3>
             <span class="tag">Data engineering</span>
           </div>
@@ -136,16 +152,17 @@
       <h2 class="section-title"><span>03</span> Experience &amp; education</h2>
       <ol class="timeline">
         <li>
-          <div class="when">Feb 2023 – Jul 2023</div>
+          <div class="when">Jan 2023 – Jan 2025</div>
           <div class="what">
             <img src="assets/images/varlab_virtual_and_augmented_reality_lab_logo.jpeg" width="56" height="56" alt="VARLab logo" loading="lazy">
             <div>
-              <h3>Technical Project Assistant</h3>
-              <p class="org">Centre for Virtual Reality Innovation (VARLab) · Waterloo, ON (remote)</p>
+              <h3>Software QA &amp; DevOps Collaborator</h3>
+              <p class="org">Centre for Virtual Reality Innovation (VARLab) · Contract, part-time · Waterloo, ON (remote)</p>
               <ul class="bullets">
-                <li>Liaison between external development teams and internal clients on VR/AR learning simulations.</li>
-                <li>Translated client requirements into development tasks and unblocked technical bottlenecks.</li>
-                <li>Introduced QA checks for simulation stability and tracked sprints to keep milestones on schedule.</li>
+                <li>Validated deployments across environments with automated integration tests and health checks, applying observability principles from my SOC background to diagnose issues quickly.</li>
+                <li>Enforced Git best practices (branching, semantic commits) for audit-ready change traceability that laid the groundwork for CI/CD, and joined code reviews with a security-first lens.</li>
+                <li>Provisioned isolated test environments with scripts, applying Infrastructure as Code principles for reproducible dev and staging, and automated test data generation.</li>
+                <li>Built a knowledge base of incident reports and root causes, and explored LLM summarization to categorize failures and reduce mean time to resolution.</li>
               </ul>
             </div>
           </div>
@@ -155,11 +172,48 @@
           <div class="what">
             <div>
               <h3>Ontario College Diploma, Computer Programming</h3>
-              <p class="org">Conestoga College</p>
+              <p class="org">Conestoga College · Waterloo, ON</p>
               <ul class="bullets">
-                <li>Object-oriented back ends in Java and C#; SQL design; networking; Linux.</li>
-                <li>Responsive web apps and PWAs in JavaScript, HTML5 and CSS3.</li>
-                <li>Scrum teams, Git/GitHub workflows and continuous integration.</li>
+                <li>Object-oriented analysis and design, agile methods, and business and web application development in Java, C# and open-source tools.</li>
+                <li>Independent projects including a Network Diagnostic PWA, built on a Linux (Mint) workflow, plus contributions to community software-restoration projects.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="when">Dec 2021 – Dec 2022</div>
+          <div class="what">
+            <div>
+              <h3>Research &amp; Project Assistant (internship)</h3>
+              <p class="org">CEBRI, Brazilian Center for International Relations · São Paulo, Brazil (remote)</p>
+              <ul class="bullets">
+                <li>Managed complex datasets and coordinated cross-functional stakeholders for international research projects.</li>
+                <li>Streamlined data workflows with digital automation tools, improving delivery timelines.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="when">Jan 2020 – Dec 2021</div>
+          <div class="what">
+            <div>
+              <h3>Digital Strategy &amp; Data Specialist (freelance)</h3>
+              <p class="org">Estímulo Escolar · São Paulo, Brazil</p>
+              <ul class="bullets">
+                <li>Analyzed engagement and conversion data to optimize digital platform performance, and ran automated marketing workflows.</li>
+                <li>Acted as technical liaison on freelance web projects, making sure deliverables met functional and UX requirements.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="when">Oct 2019 – Jan 2020</div>
+          <div class="what">
+            <div>
+              <h3>Marketing &amp; Business Development Consultant (freelance)</h3>
+              <p class="org">Career Contacts · Vancouver, BC (remote)</p>
+              <ul class="bullets">
+                <li>Web specialist and digital designer: engagement analysis, marketing automation and web project liaison.</li>
               </ul>
             </div>
           </div>
@@ -169,7 +223,7 @@
 
     <section class="wrap section contact" id="contact">
       <h2 class="section-title"><span>04</span> Contact</h2>
-      <p class="lead">Open to full stack and backend roles, and to interesting collaborations. The quickest way to reach me is LinkedIn.</p>
+      <p class="lead">I'm interested in Cloud/DevOps, DevSecOps and AIOps roles, and in open-source collaborations. The quickest way to reach me is LinkedIn.</p>
       <div class="cta">
         <a class="btn primary" href="https://www.linkedin.com/in/ettoresenatore/" rel="noopener">Message me on LinkedIn</a>
         <a class="btn" href="https://github.com/EttoreCSenatore" rel="noopener">github.com/EttoreCSenatore</a>
@@ -178,7 +232,7 @@
   </main>
 
   <footer class="wrap foot">
-    <p>© <span id="year">2026</span> Ettore Ciambra Senatore · Waterloo, Ontario, Canada</p>
+    <p>© <span id="year">2026</span> Ettore Ciambra Senatore · São Paulo, Brazil</p>
   </footer>
 
   <script src="js/main.js" defer></script>
