@@ -94,6 +94,26 @@
 
         <article class="card">
           <div class="card-head">
+            <h3>Confere</h3>
+            <span class="tag">Security · Open source</span>
+          </div>
+          <p>Check before you pay. A web app, API and command-line tool that cross-reference public Brazilian data from BrasilAPI (company CNPJ, banks, Pix participants) and show explained warning signs, without storing what you look up. Built privacy-first, with LGPD (Brazil's data protection law) in mind from the first commit.</p>
+          <ul class="bullets">
+            <li>Explainable risk rules: every sign shows the rule and weight behind it; a hint, never a verdict, and it does not verify the Pix key holder</li>
+            <li>Privacy by design, enforced by tests: no accounts or history, and no IPs or identifiers in logs; sole proprietors and MEI have their name and address omitted</li>
+            <li>Open-data explorer with CSV export that works from a weekly local copy of the public lists, so it does not depend on BrasilAPI for them</li>
+            <li>Non-root read-only Docker + Caddy deployment, strict CSP, Trivy, gitleaks and SBOMs in CI, a smoke test that checks the logs; AI-assisted LGPD review (not legal advice)</li>
+            <li>FastAPI + React + Typer CLI with 160+ automated tests; bilingual Docusaurus docs (English and Português), AGPL-3.0</li>
+          </ul>
+          <ul class="chips"><li>FastAPI</li><li>React</li><li>Typer</li><li>Docker</li><li>Caddy</li><li>LGPD</li><li>GitHub Actions</li></ul>
+          <div class="links">
+            <a href="https://github.com/EttoreCSenatore/confere" rel="noopener">Source</a>
+            <a href="https://ettorecsenatore.github.io/confere/" rel="noopener">Documentation</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
             <h3>VARHub</h3>
             <span class="tag">Capstone · Open source</span>
           </div>
