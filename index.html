@@ -94,6 +94,26 @@
 
         <article class="card">
           <div class="card-head">
+            <h3>VARHub</h3>
+            <span class="tag">Capstone · Open source</span>
+          </div>
+          <p>My Conestoga College capstone, rebuilt as an open-source concept for publishing VR and AR projects for companies and schools. A visitor scans a QR code and explores a 3D model in augmented reality or a 360° video right in the phone browser, then leaves feedback with no account. Staff get a dashboard with metrics and printable QR codes. Built originally for VARLab; name, logo and content are configurable.</p>
+          <ul class="bullets">
+            <li>React 19 PWA, phone-first: about 300 KB of initial JavaScript, offline cache, AR through model-viewer (Android and iOS) and a Three.js 360° viewer</li>
+            <li>Express + PostgreSQL API with visitor and admin roles, rate-limited anonymous feedback and an analytics summary</li>
+            <li>Security-reviewed: JWT with roles checked in the database, parameterized SQL, Helmet, rate limits, http(s)-only URLs, dependency audit in CI</li>
+            <li>Integration tests against real PostgreSQL, CI on both repos, bilingual Docusaurus docs (English and Português), AGPL-3.0</li>
+          </ul>
+          <ul class="chips"><li>React</li><li>model-viewer</li><li>Three.js</li><li>Express</li><li>PostgreSQL</li><li>GitHub Actions</li></ul>
+          <div class="links">
+            <a href="https://github.com/EttoreCSenatore/varhub-client" rel="noopener">Client</a>
+            <a href="https://github.com/EttoreCSenatore/varhub-server" rel="noopener">Server</a>
+            <a href="https://ettorecsenatore.github.io/varhub-client/" rel="noopener">Documentation</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
             <h3>SlicePizza</h3>
             <span class="tag">DevOps lab</span>
           </div>
@@ -229,6 +249,7 @@
               <ul class="bullets">
                 <li>Object-oriented analysis and design, agile methods, and business and web application development in Java, C# and open-source tools.</li>
                 <li>Independent projects including a Network Diagnostic PWA, built on a Linux (Mint) workflow, plus contributions to community software-restoration projects.</li>
+                <li>Capstone: VARHub, an AR/VR project showcase with QR-code access, 3D and 360° viewers, feedback and an admin dashboard, built for VARLab.</li>
               </ul>
             </div>
           </div>
