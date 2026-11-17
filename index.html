@@ -153,16 +153,34 @@
             <h3>Caderneta</h3>
             <span class="tag">Full stack · EdTech</span>
           </div>
-          <p>A lightweight school platform for schools, teachers, families and students: grades with automatic averages, attendance, announcements, a school calendar and an exam print queue, usable from the browser or as an installable phone app. Documentation is in Portuguese.</p>
+          <p>A lightweight school platform for schools, teachers, families and students: grades with automatic averages, attendance, announcements and messages, a school calendar, exam printing and student history across years, usable in the browser or as an installable offline-capable app.</p>
           <ul class="bullets">
-            <li>Foundation shipped: login with two-factor authentication, invitations, roles, classes, students, guardians and spreadsheet import</li>
-            <li>Built for minors' and health data: per-school row-level security in PostgreSQL, encrypted health records, LGPD-oriented design</li>
-            <li>FastAPI with Alembic migrations, tested against a real PostgreSQL; React PWA; CI on every change</li>
+            <li>Milestones M1 to M7 done: login with two-factor authentication, grades and attendance, notifications and web push, calendar, encrypted exam files with a print queue, PWA</li>
+            <li>Built for minors' and health data: per-school row-level security in PostgreSQL, encrypted health records, data-subject rights and an LGPD compliance package</li>
+            <li>FastAPI with Alembic migrations, 230+ tests against a real PostgreSQL, React PWA, CI and production image scanning; AGPL-3.0</li>
           </ul>
           <ul class="chips"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Docusaurus</li></ul>
           <div class="links">
             <a href="https://github.com/EttoreCSenatore/caderneta" rel="noopener">Source</a>
             <a href="https://ettorecsenatore.github.io/caderneta/" rel="noopener">Documentation</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Confere</h3>
+            <span class="tag">Civic tech · Privacy</span>
+          </div>
+          <p>Check a company (CNPJ), a bank and a Pix participant before you pay, using public data from BrasilAPI. A web app, REST API and command-line tool with explainable risk signals: a hint, never a verdict.</p>
+          <ul class="bullets">
+            <li>Eight explainable risk signals for company due diligence, including alphanumeric CNPJ support, and a "can I pay?" check for banks and Pix participants</li>
+            <li>Open-data explorer (banks, municipalities, NCM codes, brokers) with CSV export that guards against formula injection</li>
+            <li>LGPD by design: no database, no accounts, no IPs or CNPJs in logs; hardened non-root containers scanned with Trivy and gitleaks in CI; AGPL-3.0</li>
+          </ul>
+          <ul class="chips"><li>Python</li><li>FastAPI</li><li>React</li><li>Typer CLI</li><li>Docker</li><li>Caddy</li></ul>
+          <div class="links">
+            <a href="https://github.com/EttoreCSenatore/confere" rel="noopener">Source</a>
+            <a href="https://ettorecsenatore.github.io/confere/" rel="noopener">Documentation</a>
           </div>
         </article>
 
