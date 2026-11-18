@@ -161,7 +161,7 @@
             <li>Sitemap discovery, paginated crawl, scheduled full and incremental refresh</li>
             <li>Full-text search with SQLite FTS5 and BM25 ranking: accent-insensitive, any word order</li>
             <li>Cursor-paginated FastAPI endpoints, SQLite (WAL), mocked-HTTP test suite</li>
-            <li>Security-reviewed: SSRF-safe image proxy, rate limits, CodeQL and CI on every PR</li>
+            <li>Security-reviewed: SSRF-safe image proxy, rate limits, spoof-proof client IPs, CodeQL and CI on every PR, plus a weekly live canary that flags store markup changes</li>
           </ul>
           <ul class="chips"><li>Python</li><li>FastAPI</li><li>SQLite FTS5</li><li>APScheduler</li><li>React</li></ul>
           <div class="links">
@@ -212,13 +212,14 @@
             <h3>Atalaia</h3>
             <span class="tag">Security · Open source</span>
           </div>
-          <p>An open-source, self-hosted network watchtower, in the spirit of Fing: discover the devices on your network, track their history, get alerts and run defensive security checks. A Go agent on the LAN that serves its own embedded web app. <em>Atalaia</em> is Portuguese for watchtower.</p>
+          <p>An open-source, self-hosted network watchtower, in the spirit of Fing: discover the devices on your network, keep their history, get alerts and run defensive security checks. A single Go binary on the LAN that serves its own web app. <em>Atalaia</em> is Portuguese for watchtower.</p>
           <ul class="bullets">
-            <li>Early stage: foundation, CI and bilingual documentation are done; device discovery is the next milestone</li>
-            <li>Defensive by design: scope locked to the host's own private networks, opt-in logged active scans, login required, LAN-only, no root, no telemetry; no exploitation or deauthentication tools on purpose</li>
-            <li>Planned: ARP spoofing and rogue DHCP detection, port, CVE and TLS checks, alerts through ntfy, Telegram, e-mail and webhooks</li>
+            <li>Released as v0.4: device discovery and history, a Svelte web app with login, alerts through ntfy, Telegram, webhook and e-mail, Docker image and .deb/.rpm packages for amd64, arm64 and armv7</li>
+            <li>Defensive checks without root: ARP-spoofing signs, rogue DHCP server detection, exposed-service and TLS audit, plus ping, DNS, traceroute, port scan, Wake-on-LAN and a speed test</li>
+            <li>Safe by design: scope locked to the host's own private networks, active actions opt-in, admin-only and logged, built-in HTTPS, hardened systemd unit; no exploitation tools and no telemetry on purpose</li>
+            <li>Release pipeline with checksums, SBOM and provenance; gosec and govulncheck in CI; bilingual documentation (English and Português), AGPL-3.0</li>
           </ul>
-          <ul class="chips"><li>Go</li><li>SQLite</li><li>Docker</li><li>Docusaurus</li><li>GitHub Actions</li><li>Network security</li></ul>
+          <ul class="chips"><li>Go</li><li>Svelte</li><li>SQLite</li><li>Docker</li><li>systemd</li><li>Network security</li><li>GitHub Actions</li></ul>
           <div class="links">
             <a href="https://github.com/EttoreCSenatore/atalaia" rel="noopener">Source</a>
             <a href="https://ettorecsenatore.github.io/atalaia/" rel="noopener">Documentation</a>
