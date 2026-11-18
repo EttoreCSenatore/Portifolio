@@ -208,19 +208,19 @@
 
         <article class="card">
           <div class="card-head">
-            <h3>Confere</h3>
-            <span class="tag">Civic tech · Privacy</span>
+            <h3>Atalaia</h3>
+            <span class="tag">Security · Open source</span>
           </div>
-          <p>Check a company (CNPJ), a bank and a Pix participant before you pay, using public data from BrasilAPI. A web app, REST API and command-line tool with explainable risk signals: a hint, never a verdict.</p>
+          <p>An open-source, self-hosted network watchtower, in the spirit of Fing: discover the devices on your network, track their history, get alerts and run defensive security checks. A Go agent on the LAN that serves its own embedded web app. <em>Atalaia</em> is Portuguese for watchtower.</p>
           <ul class="bullets">
-            <li>Eight explainable risk signals for company due diligence, including alphanumeric CNPJ support, and a "can I pay?" check for banks and Pix participants</li>
-            <li>Open-data explorer (banks, municipalities, NCM codes, brokers) with CSV export that guards against formula injection</li>
-            <li>LGPD by design: no database, no accounts, no IPs or CNPJs in logs; hardened non-root containers scanned with Trivy and gitleaks in CI; AGPL-3.0</li>
+            <li>Early stage: foundation, CI and bilingual documentation are done; device discovery is the next milestone</li>
+            <li>Defensive by design: scope locked to the host's own private networks, opt-in logged active scans, login required, LAN-only, no root, no telemetry; no exploitation or deauthentication tools on purpose</li>
+            <li>Planned: ARP spoofing and rogue DHCP detection, port, CVE and TLS checks, alerts through ntfy, Telegram, e-mail and webhooks</li>
           </ul>
-          <ul class="chips"><li>Python</li><li>FastAPI</li><li>React</li><li>Typer CLI</li><li>Docker</li><li>Caddy</li></ul>
+          <ul class="chips"><li>Go</li><li>SQLite</li><li>Docker</li><li>Docusaurus</li><li>GitHub Actions</li><li>Network security</li></ul>
           <div class="links">
-            <a href="https://github.com/EttoreCSenatore/confere" rel="noopener">Source</a>
-            <a href="https://ettorecsenatore.github.io/confere/" rel="noopener">Documentation</a>
+            <a href="https://github.com/EttoreCSenatore/atalaia" rel="noopener">Source</a>
+            <a href="https://ettorecsenatore.github.io/atalaia/" rel="noopener">Documentation</a>
           </div>
         </article>
 
