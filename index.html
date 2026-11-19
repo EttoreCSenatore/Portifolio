@@ -63,11 +63,12 @@
         <div class="skills" aria-label="Skills">
           <div><h3>Development</h3><ul class="chips"><li>Python</li><li>TypeScript</li><li>Go</li><li>Rust</li><li>C/C++ (ESP32)</li><li>Bash</li><li>SQL</li><li>FastAPI</li><li>Node.js, Express</li><li>React</li><li>Svelte</li><li>Three.js</li></ul></div>
           <div><h3>Data &amp; messaging</h3><ul class="chips"><li>PostgreSQL</li><li>SQLite</li><li>RabbitMQ</li><li>MQTT</li></ul></div>
-          <div><h3>Containers &amp; platform</h3><ul class="chips"><li>Docker</li><li>Docker Compose</li><li>Linux, systemd</li><li>Caddy</li></ul></div>
-          <div><h3>CI/CD &amp; DevSecOps</h3><ul class="chips"><li>GitHub Actions</li><li>Trivy</li><li>CodeQL</li><li>Gitleaks</li><li>Dependabot</li></ul></div>
+          <div><h3>Cloud &amp; IaC</h3><ul class="chips"><li>AWS (VPC, EKS, IAM, KMS, S3, CloudWatch)</li><li>Terraform</li><li>GitHub OIDC to AWS</li></ul></div>
+          <div><h3>Containers &amp; platform</h3><ul class="chips"><li>Kubernetes (EKS)</li><li>Helm</li><li>ArgoCD</li><li>Docker</li><li>Docker Compose</li><li>Linux, systemd</li><li>Caddy</li></ul></div>
+          <div><h3>CI/CD &amp; DevSecOps</h3><ul class="chips"><li>GitHub Actions</li><li>Checkov</li><li>TFLint</li><li>Trivy</li><li>CodeQL</li><li>Gitleaks</li><li>Dependabot</li></ul></div>
           <div><h3>Observability</h3><ul class="chips"><li>Prometheus</li><li>Grafana</li><li>Loki</li></ul></div>
           <div><h3>Testing &amp; docs</h3><ul class="chips"><li>pytest</li><li>Vitest</li><li>Playwright</li><li>Docusaurus (bilingual)</li></ul></div>
-          <div class="exp"><h3>Work &amp; study experience</h3><p class="note">Used on the job or in my studies, not in my public repositories.</p><ul class="chips"><li>AWS (EC2, S3, IAM, VPC, CloudTrail)</li><li>Terraform</li><li>CloudFormation</li><li>Kubernetes (EKS)</li><li>Helm</li><li>GitLab CI</li><li>Jenkins</li><li>ArgoCD</li><li>SonarQube</li><li>Snyk</li><li>ELK Stack</li><li>Datadog</li><li>Python log anomaly detection</li><li>OpenAI API</li><li>AWS Bedrock</li><li>LangChain</li><li>Prompt engineering</li><li>Java</li><li>C#</li></ul></div>
+          <div class="exp"><h3>Work &amp; study experience</h3><p class="note">Used on the job or in my studies, not in my public repositories.</p><ul class="chips"><li>AWS (EC2, CloudTrail)</li><li>CloudFormation</li><li>GitLab CI</li><li>Jenkins</li><li>SonarQube</li><li>Snyk</li><li>ELK Stack</li><li>Datadog</li><li>Python log anomaly detection</li><li>OpenAI API</li><li>AWS Bedrock</li><li>LangChain</li><li>Prompt engineering</li><li>Java</li><li>C#</li></ul></div>
         </div>
       </div>
     </section>
@@ -75,6 +76,23 @@
     <section class="wrap section" id="projects">
       <h2 class="section-title"><span>02</span> Projects</h2>
       <div class="cards">
+
+        <article class="card featured">
+          <div class="card-head">
+            <h3>AWS EKS Platform</h3>
+            <span class="tag">Cloud · DevSecOps</span>
+          </div>
+          <p>A production-style Kubernetes platform on AWS, built end to end with Terraform. Pull requests are linted, security-scanned and planned automatically; applies run only after reviewer approval, using GitHub OIDC instead of stored AWS keys. Inside the cluster, ArgoCD keeps every workload in sync with Git.</p>
+          <ul class="bullets">
+            <li>3-AZ VPC and EKS with Spot node group, KMS-encrypted secrets, IMDSv2, audit logs</li>
+            <li>GitHub Actions: TFLint, Checkov (SARIF to Security tab), Gitleaks, plan comments on PRs, SHA-pinned actions</li>
+            <li>ArgoCD app-of-apps: Prometheus/Grafana, restricted Pod Security, default-deny NetworkPolicies, autoscaling sample app</li>
+          </ul>
+          <ul class="chips"><li>AWS</li><li>Terraform</li><li>EKS</li><li>ArgoCD</li><li>GitHub Actions</li><li>Prometheus</li></ul>
+          <div class="links">
+            <a href="https://github.com/EttoreCSenatore/aws-eks-platform" rel="noopener">Source</a>
+          </div>
+        </article>
 
         <article class="card featured">
           <div class="card-head">
