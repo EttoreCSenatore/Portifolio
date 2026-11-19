@@ -78,6 +78,8 @@ h1 em { font-style: normal; color: var(--accent); }
 .skills { display: grid; gap: 20px; align-content: start; }
 .skills h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 8px; }
 
+.skills .note { color: var(--muted); font-size: .85rem; margin-bottom: 8px; }
+.skills .exp { padding-top: 20px; border-top: 1px dashed var(--line); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { background: var(--chip); border: 1px solid var(--line); padding: 3px 12px; border-radius: 999px; font-size: .85rem; font-weight: 500; }
 
