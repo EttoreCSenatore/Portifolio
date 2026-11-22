@@ -234,12 +234,13 @@
           </div>
           <p>An open-source, self-hosted network watchtower, in the spirit of Fing: discover the devices on your network, keep their history, get alerts and run defensive security checks. A single Go binary on the LAN that serves its own web app. <em>Atalaia</em> is Portuguese for watchtower.</p>
           <ul class="bullets">
-            <li>Released as v0.7: device discovery and history, a Svelte web app with login, alerts through ntfy, Telegram, webhook and e-mail, Docker image and .deb/.rpm packages for amd64, arm64 and armv7, upgrade-tested on Debian and Fedora before every release</li>
+            <li>Released as v0.8: device discovery and history, a Svelte web app with login that installs as an app (PWA), alerts through ntfy, Telegram, webhook and e-mail, Docker image and .deb/.rpm packages for amd64, arm64 and armv7, upgrade-tested on Debian and Fedora before every release</li>
             <li>Identifies devices by mDNS, SSDP/UPnP, NetBIOS and DHCP names, with a type guess (router, printer, TV, camera, phone...) and icons on the dashboard</li>
             <li>Defensive checks without root: ARP-spoofing signs, rogue DHCP server detection, exposed-service and TLS audit, plus ping, DNS, traceroute, port scan, Wake-on-LAN and a speed test</li>
             <li>Built to run unattended: daily backups with weekly restore tests, a backup before every database upgrade, a health endpoint, heartbeats and optional Prometheus metrics</li>
             <li>Safe by design: scope locked to the host's own private networks, active actions opt-in, admin-only and logged, built-in HTTPS, hardened systemd unit; no exploitation tools and no telemetry on purpose</li>
             <li>Supply chain pinned by commit SHA and image digest; releases with checksums, SBOM and provenance; gosec, staticcheck, govulncheck and Trivy in CI; bilingual docs (English and Português) with a manual, a decision log and a live demo; AGPL-3.0</li>
+          </ul>
           <ul class="chips"><li>Go</li><li>Svelte</li><li>SQLite</li><li>Docker</li><li>systemd</li><li>Prometheus</li><li>Network security</li><li>GitHub Actions</li></ul>
           <div class="links">
             <a href="https://github.com/EttoreCSenatore/atalaia" rel="noopener">Source</a>
